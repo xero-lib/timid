@@ -18,15 +18,15 @@ await client.login(process.env.TOKEN);
 // let commands = new Map<string, Command>();
 // import data, { execute } from "./commands/bulk_delete";
 
-class Command { // probably more efficient as an interface, but might not cooperate with Map
-    data: SlashCommandBuilder;
-    execute: Function;
+// class Command { // probably more efficient as an interface, but might not cooperate with Map
+//     data: SlashCommandBuilder;
+//     execute: Function;
 
-    constructor(data: SlashCommandBuilder, execute: Function) {
-        this.data = data;
-        this.execute = execute;
-    }
-}
+//     constructor(data: SlashCommandBuilder, execute: Function) {
+//         this.data = data;
+//         this.execute = execute;
+//     }
+// }
 
 const collectorFilter = (reaction: MessageReaction, user: User) => {
     const member = reaction.message.guild?.members.cache.get(user.id);
