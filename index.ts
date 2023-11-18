@@ -88,7 +88,7 @@ client.on("messageCreate", async (message) => {
                 const reaction = collected.first();
                 // have to check if is guild text again to appease the type gods
                 if (reaction?.emoji.name === "✅" && message.channel.type == ChannelType.GuildText) {
-                    let total = 2 + +args[1];
+                    let total = 1 + +args[1];
                     try {
                         while (total >= 100) {
                             let removed = (await message.channel.bulkDelete(99, true)).size;
