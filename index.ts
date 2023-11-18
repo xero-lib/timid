@@ -13,9 +13,9 @@ const client = new Client({ intents: [
 
 await client.login(process.env.TOKEN);
 
-let commands = new Map<string, Command>();
 
 // for use in future with slash commands
+// let commands = new Map<string, Command>();
 // import data, { execute } from "./commands/bulk_delete";
 
 class Command { // probably more efficient as an interface, but might not cooperate with Map
