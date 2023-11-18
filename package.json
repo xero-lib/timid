@@ -1,0 +1,20 @@
+{
+  "name": "delete_messages",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "start": "bun index.ts",
+    "deploy-commands": "bun deploy_commands.ts"
+  },
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.3.1",
+    "zlib-sync": "^0.1.9"
+  }
+}
